@@ -32,3 +32,4 @@ First, clone this repository.
 ### Control plane (software) experiments
 
 1. Populate ``DataSets/`` folder by downloading datasets from [here](https://drive.usercontent.google.com/download?id=1k-oTsxVD3fkZnjwj-4XclVhQdAC36nLd&export=download&authuser=0) as shown in https://github.com/vicTorKd/HorusEye/. For data plane simulations, populate the ``DataSets/Dataplane`` folder using this [link](https://drive.google.com/drive/folders/1d9pf-e9vSW3jf4_R3vFbqvHXD4VcrG_S). Alternatively, simply download the ``DataSets`` folder from this [link](https://drive.google.com/drive/folders/1d9pf-e9vSW3jf4_R3vFbqvHXD4VcrG_S).
+2. Run ``iGuard Artifact Evaluation.ipynb`` to completion and verify the plots for software experiments. Please make sure to update the datasets path wherever possible!
