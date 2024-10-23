@@ -28,5 +28,7 @@ iForest models in real-world equipment.
 We recently got accepted at ACM CoNext 2024!
 
 ## Reproducing Artifacts
-
+First, clone this repository.
 ### Control plane (software) experiments
+
+1. Populate ``DataSets/`` folder by downloading datasets from 
