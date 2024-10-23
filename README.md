@@ -34,3 +34,12 @@ First, clone this repository.
 1. Populate ``DataSets/`` folder by downloading datasets from [here](https://drive.usercontent.google.com/download?id=1k-oTsxVD3fkZnjwj-4XclVhQdAC36nLd&export=download&authuser=0) as shown in https://github.com/vicTorKd/HorusEye/. For data plane simulations, populate the ``DataSets/Dataplane`` folder using this [link](https://drive.google.com/drive/folders/1d9pf-e9vSW3jf4_R3vFbqvHXD4VcrG_S). Alternatively, simply download the ``DataSets`` folder from this [link](https://drive.google.com/drive/folders/1d9pf-e9vSW3jf4_R3vFbqvHXD4VcrG_S).
 2. Run ``iGuard Artifact Evaluation.ipynb`` to completion and verify the plots for software experiments. Please make sure to update the datasets path wherever possible!
 3. Verify the results from [here](https://docs.google.com/spreadsheets/d/1DVljB4ODjpUPCPUhgQmXLwM9dhUEfgg5Kwsav-rLBrQ/edit?usp=sharing). This is the document we have curated for all possible numbers!
+
+### Data plane (hardware) experiments
+Reproducing these can be very cumbersome as main overhead is in setting up the switch. We recommend use these only to verify data plane simulations and we deem these not necessary for artifact reproducability. 
+1. Install hardware switch and P4 runtime by following this
+[tutorial](https://docs.google.com/document/d/1gyYWL0HY2SanzAoA6GGRImf9ERR1KXrG0Ngg8Zh5VfA/edit#heading=h.r7zf0lr53zqp).
+2. Download [PCAP traces](https://drive.usercontent.google.com/download?id=191CmJYWszlSmIitfid2J53UMYtiaqhhe&export=download&authuser=0) from https://github.com/vicTorKd/HorusEye/.
+3. Using these traces, send the packets to the switch while compiling ``Data_plane/logic.p4``.
+4. Verify the results with data plane simulations from accuracy metrics.
+5. Use the P4i tool (we do not have the license as of now) with ``logic.p4`` as target to monitor resource and memory consumption gains compared to iForest models. 
