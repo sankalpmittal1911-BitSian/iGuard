@@ -1,4 +1,5 @@
-# iGuard
+# iGuard ![image](https://github.com/user-attachments/assets/32861086-12b4-4c82-ab88-9113799e182f)
+
 iGuard: Efficient Isolation Forest Design for Malicious Traffic Detection in Programmable Switches
 ## Abstract
 Deploying machine learning (ML) models in programmable switch
