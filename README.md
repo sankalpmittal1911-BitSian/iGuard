@@ -42,4 +42,25 @@ Reproducing these can be very cumbersome as main overhead is in setting up the s
 2. Download [PCAP traces](https://drive.usercontent.google.com/download?id=191CmJYWszlSmIitfid2J53UMYtiaqhhe&export=download&authuser=0) from https://github.com/vicTorKd/HorusEye/.
 3. Using these traces, send the packets to the switch while compiling ``Data_plane/logic.p4``.
 4. Verify the results with data plane simulations from accuracy metrics.
-5. Use the P4i tool (we do not have the license as of now) with ``logic.p4`` as target to monitor resource and memory consumption gains compared to iForest models. 
+5. Use the P4i tool (we do not have the license as of now) with ``logic.p4`` as target to monitor resource and memory consumption gains compared to iForest models.
+
+### Cite
+```
+@inproceedings{10.1145/3680121.3697807,
+author = {Mittal, Sankalp and V., Harikrishnan and Heetkumar, Patel and Tammana, Praveen},
+title = {iGuard: Efficient Isolation Forest Design for Malicious Traffic Detection in Programmable Switches},
+year = {2024},
+isbn = {9798400711084},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3680121.3697807},
+doi = {10.1145/3680121.3697807},
+abstract = {Deploying machine learning (ML) models in programmable switch data planes facilitates low latency and high throughput traffic inference at line speed. However, data planes pose significant constraints due to the limited memory and minimal support for mathematical operations and data types. As a result, the only unsupervised ML models implemented in data planes to date are Isolation Forests (iForests). However, conventional iForest models yield suboptimal malicious traffic detection performance in various traffic use cases. To address this limitation, this paper proposes iGuard, the first iForest implementation that can accurately detect malicious traffic by incorporating the "knowledge" of more powerful autoencoders. We deploy iGuard in the form of a small set of whitelist rules that could be easily installed in the switch data planes. We implement iGuard using the P4 language, and assess its performance in an experimental platform based on Intel Tofino switches. Upon evaluating iGuard on various attack traffic use cases, our model can improve accuracy up to 48.3\% while maintaining a similar or lower switch memory footprint over previous approaches to implement iForest models in real-world equipment.},
+booktitle = {Proceedings of the 20th International Conference on Emerging Networking EXperiments and Technologies},
+pages = {55–64},
+numpages = {10},
+keywords = {intrusion/anomaly detection, machine learning, network security, programmable switches, software defined networking},
+location = {Los Angeles, CA, USA},
+series = {CoNEXT '24}
+}
+```
